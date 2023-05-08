@@ -1,0 +1,292 @@
+body {
+  font-family: 'Epilogue', sans-serif;
+  margin: 0;
+  width: 1440px;
+  margin: auto;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#A {
+  left: 340px;
+  top: 40px;
+}
+
+#B {
+  left: 475px;
+  top: 40px;
+}
+
+.dropdown-content a {
+  color: hsl(0, 0%, 41%);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content img {
+  margin-right: 5px;
+}
+
+.dropdown-content a:hover {
+  color: #000;
+  border-radius: 12px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 10px;
+}
+
+section {
+  position: relative;
+  margin: 100px;
+}
+
+.mainImg {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+p {
+  font-size: 18px;
+  color: hsl(0, 0%, 41%);
+  line-height: 1.6;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: 2px solid #000;
+  border-radius: 12px;
+  padding: 16px 32px;
+  font-size: 18px;
+  margin: 6px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.register {
+  background-color: #fff;
+  color: hsl(0, 0%, 41%);
+  border: 2px solid hsl(0, 0%, 41%);
+  border-radius: 12px;
+  width: 80px;
+  font-size: 18px;
+}
+
+.register:hover {
+  color: hsl(0, 0%, 8%);
+  border: 2px solid hsl(0, 0%, 8%);
+}
+
+.logos {
+  bottom: 0;
+  margin-top: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-content: end;
+}
+
+.logos img {
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.sidenav,
+span {
+  display: none;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: hsl(0, 0%, 41%);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: left;
+}
+
+#overlay-button {
+  text-align: center;
+  margin: auto;
+  padding: 8px 40px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  margin: 8px 8px 8px 16px;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #f1f1f1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.overlay .closebtn:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #fff;
+  padding-left: 8px;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    width: 375px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+
+  section {
+    position: relative;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .logos {
+    bottom: 0;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logos img {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+
+  .topnav a:not(:first-child),
+  .topnav-right,
+  .topnav .dropdown {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .overlay {
+    width: 0;
+  }
+
+  #overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+}
