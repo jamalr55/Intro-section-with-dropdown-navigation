@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](#)
-- Live Site URL: [Live site URL here](#)
+- Solution URL: [Solution URL here](https://github.com/jamalr55/Intro-section-with-dropdown-navigation)
+- Live Site URL: [Live site URL here](https://graceful-yeot-cbf5fb.netlify.app/)
 
 ## My process
 
